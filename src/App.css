@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(188, 207, 218);
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+button {
+  background: rgb(24, 65, 24);
+  color: beige;
+}
