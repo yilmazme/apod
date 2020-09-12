@@ -1,14 +1,26 @@
 body {
-  background-color: rgb(188, 207, 218);
-  text-align: center;
+  background-color: rgb(190, 189, 235);
 }
-
 img {
   width: 100%;
   height: auto;
-  margin-top: 10px;
 }
 
+.apod {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+p {
+  margin-top: 5px;
+  padding: 0px 10px 0px 10px;
+}
 button {
   background: rgb(24, 65, 24);
   color: beige;
