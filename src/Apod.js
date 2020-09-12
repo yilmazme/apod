@@ -26,7 +26,7 @@ function Apod() {
     image.data_type === image ? (
       <img src={hd ? image.hdurl : image.url} alt="photoofday" />
     ) : (
-      <ReactPlayer width="100vw" height="80vw" controls url={image.url} />
+      <ReactPlayer width="100vw" controls url={image.url} />
     );
 
   if (error) {
