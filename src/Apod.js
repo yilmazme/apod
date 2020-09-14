@@ -22,12 +22,12 @@ function Apod() {
         setError(error);
       });
   }, []); //empty for mimic cdm
-  const Display =
-    image.data_type === image ? (
-      <img src={hd ? image.hdurl : image.url} alt="photoofday" />
-    ) : (
-      <ReactPlayer width="100vw" controls url={image.url} />
-    );
+  var display;
+  if (image.media_type === "image") {
+    display = <img src={hd ? image.hdurl : image.url} alt="photoofday" />;
+  } else {
+    display = <ReactPlayer width="100vw" controls url={image.url} />;
+  }
 
   if (error) {
     return (
@@ -47,7 +47,7 @@ function Apod() {
         >
           {hd ? "Normal" : "For HD"}
         </button>
-        {Display}
+        {display}
         <p>
           <b>About: </b>
           {image.explanation}

@@ -5,6 +5,12 @@ img {
   width: 100%;
   height: auto;
 }
+@media (min-width: 690px) {
+  img {
+    width: 80%;
+    height: auto;
+  }
+}
 
 .apod {
   display: flex;
@@ -24,4 +30,6 @@ button {
   margin-bottom: 5px;
   background: rgb(24, 65, 24);
   color: beige;
+  cursor: pointer;
+  min-width: 8vw;
 }
